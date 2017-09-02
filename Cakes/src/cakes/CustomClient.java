@@ -28,4 +28,9 @@ public class CustomClient extends Client {
 		}
 		return sum;
 	}
+
+	@Override
+	public String toString() {
+		return "CustomClient [amountOfMoneyFromVauchers=" + amountOfMoneyFromVauchers + "]";
+	}
 }

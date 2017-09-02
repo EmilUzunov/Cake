@@ -10,5 +10,22 @@ public class SpecialCake extends Cake {
 		this.type = type;
 		this.nameOfEvent = type.toString();
 	}
+	
+	public static Cake generateSpecialComercialCake() {
+		return new SpecialCake(32.50f, "Special Cake1", "It is special", (byte) 10, SpecialCakeEnum.COMERCIAL);
+
+	}
+
+	public static Cake generateSpecialFirmCake() {
+		return new SpecialCake(32.50f, "Special Cake2", "Something", (byte) 11, SpecialCakeEnum.FIRM);
+	}
+
+	public static Cake generateSpecialUbilaiCake() {
+		return new SpecialCake(32.50f, "Special Cake3", "Delicios", (byte) 12, SpecialCakeEnum.UBILEI);
+	}
+	
+	
+	  
+	  
 
 }

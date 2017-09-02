@@ -8,9 +8,11 @@ public class Cake extends AbstractWithPrice {
 	
 	
 	public Cake(float price, String name,String Description,byte numOfPeaces) {
-		super(price);
+		super();
+		this.setPrice(price);
 		this.name = name;
 		this.numOfPeaces = numOfPeaces;
+		this.description = Description;
 		
 	}
 

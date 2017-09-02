@@ -10,5 +10,23 @@ public class WeddingCake extends Cake {
 		this.size = size;
 		this.floars = (byte)((Math.random()*2)+1);
 	}
+	
+	
+	  
+	  
+	
+	public static  Cake generateWeddingBigCake() {
+		return new WeddingCake(30.7f, "Mega Cake", "only for Wedding", (byte) 50, WeddingCakesEnum.BIG);
+
+	}
+
+	public static Cake generateWeddingMediumCake() {
+		return new WeddingCake(25.3f, "Cool Cake", "only for weddings", (byte) 40, WeddingCakesEnum.MEDIUM);
+	}
+
+	public static Cake generateWeddingSmallCake() {
+		return new WeddingCake(23.5f, "Cake", "Only for wedding", (byte) 30, WeddingCakesEnum.SMALL);
+	}
+
 
 }

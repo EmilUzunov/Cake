@@ -8,5 +8,8 @@ public class Demo {
 		
 		Confectionery sladkarnica = new Confectionery("Sladkarnica", "08883327143");
 		sladkarnica.printMenu();
+		
+		Client client = new CustomClient("Misho", "088777665");
+		client.orderCakes("St3");
 	}
 }

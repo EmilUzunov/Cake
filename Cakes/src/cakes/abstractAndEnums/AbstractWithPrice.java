@@ -1,7 +1,7 @@
-package cakes;
+package cakes.abstractAndEnums;
 
 public abstract class AbstractWithPrice {
-	float price;
+	protected float price;
 
 	public void setPrice(float price) {
 		this.price = price;

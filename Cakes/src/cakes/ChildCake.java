@@ -1,5 +1,7 @@
 package cakes;
 
+import cakes.abstractAndEnums.ChildCakeEnum;
+
 public class ChildCake extends Cake {
 
 	private ChildCakeEnum event;
@@ -13,16 +15,16 @@ public class ChildCake extends Cake {
 	}
 	
 	public static  Cake generateChildBirthdayCake() {
-		return new ChildCake(10.50f, "Funny one", "It is good!", (byte) 6, ChildCakeEnum.BIRTHDAY, "Tim");
+		return new ChildCake(20.50f, "Funny one", "It is good!", (byte) 6, ChildCakeEnum.BIRTHDAY, "Tim");
 
 	}
 
 	public static Cake generateChildKrushteneFirmCake() {
-		return new ChildCake(11.50f, "Take me", "You will like it!", (byte) 8, ChildCakeEnum.KRUSHTENE,"Sara");
+		return new ChildCake(21.50f, "Take me", "You will like it!", (byte) 8, ChildCakeEnum.KRUSHTENE,"Sara");
 	}
 
 	public static Cake generateChildProshtapulnikCake() {
-		return new ChildCake(12.50f, "Big one", "For two.", (byte) 10, ChildCakeEnum.PROSHTAPULNIK,"Stiv");
+		return new ChildCake(22.50f, "Big one", "For two.", (byte) 10, ChildCakeEnum.PROSHTAPULNIK,"Stiv");
 	}
 	
 	  

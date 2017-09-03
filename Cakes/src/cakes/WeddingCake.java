@@ -1,5 +1,7 @@
 package cakes;
 
+import cakes.abstractAndEnums.WeddingCakesEnum;
+
 public class WeddingCake extends Cake {
 
 	private WeddingCakesEnum size;
@@ -16,16 +18,16 @@ public class WeddingCake extends Cake {
 	  
 	
 	public static  Cake generateWeddingBigCake() {
-		return new WeddingCake(30.7f, "Mega Cake", "only for Wedding", (byte) 50, WeddingCakesEnum.BIG);
+		return new WeddingCake(36.7f, "Mega Cake", "only for Wedding", (byte) 50, WeddingCakesEnum.BIG);
 
 	}
 
 	public static Cake generateWeddingMediumCake() {
-		return new WeddingCake(25.3f, "Cool Cake", "only for weddings", (byte) 40, WeddingCakesEnum.MEDIUM);
+		return new WeddingCake(45.3f, "Cool Cake", "only for weddings", (byte) 40, WeddingCakesEnum.MEDIUM);
 	}
 
 	public static Cake generateWeddingSmallCake() {
-		return new WeddingCake(23.5f, "Cake", "Only for wedding", (byte) 30, WeddingCakesEnum.SMALL);
+		return new WeddingCake(43.5f, "Cake", "Only for wedding", (byte) 30, WeddingCakesEnum.SMALL);
 	}
 
 

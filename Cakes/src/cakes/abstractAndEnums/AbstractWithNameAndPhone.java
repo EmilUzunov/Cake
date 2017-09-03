@@ -1,4 +1,4 @@
-package cakes;
+package cakes.abstractAndEnums;
 
 public abstract class AbstractWithNameAndPhone {
 	private String name;

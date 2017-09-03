@@ -1,4 +1,4 @@
-package cakes;
+package cakes.main;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -8,6 +8,13 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 import javax.swing.plaf.basic.BasicBorders.SplitPaneBorder;
+
+import cakes.Cake;
+import cakes.ChildCake;
+import cakes.SpecialCake;
+import cakes.StandartCake;
+import cakes.WeddingCake;
+import cakes.abstractAndEnums.AbstractWithNameAndPhone;
 
 public class Confectionery extends AbstractWithNameAndPhone {
 	private String adress;

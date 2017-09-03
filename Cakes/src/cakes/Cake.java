@@ -1,5 +1,7 @@
 package cakes;
 
+import cakes.abstractAndEnums.AbstractWithPrice;
+
 public class Cake extends AbstractWithPrice {
 	
 	private String name;
@@ -58,5 +60,55 @@ public class Cake extends AbstractWithPrice {
 			return false;
 		return true;
 	}
-
+	
+	public static Cake generateRandomCake(){
+	final float typeOfTheCakeNumberGeneration = (float) Math.random();
+	final float typeOfTheTypeGen = (float) Math.random();
+	if (typeOfTheCakeNumberGeneration < 0.25) {
+		if (typeOfTheTypeGen < 0.33) {
+			return SpecialCake.generateSpecialComercialCake();
+		}
+		if (typeOfTheTypeGen > 0.65) {
+			return SpecialCake.generateSpecialFirmCake();
+		} else {
+			return SpecialCake.generateSpecialUbilaiCake();
+		}
+	}
+	if (typeOfTheCakeNumberGeneration >= 0.25 && typeOfTheCakeNumberGeneration < 0.5) {
+		if (typeOfTheTypeGen < 0.33) {
+			return ChildCake.generateChildBirthdayCake();
+		}
+		if (typeOfTheTypeGen > 0.65) {
+			return ChildCake.generateChildKrushteneFirmCake();
+		} else {
+			return ChildCake.generateChildProshtapulnikCake();
+		}
+	}
+	if (typeOfTheCakeNumberGeneration >= 0.5 && typeOfTheCakeNumberGeneration < 0.75) {
+		if (typeOfTheTypeGen < 0.25) {
+			return StandartCake.generateStandartBisquidCake();
+		}
+		if (typeOfTheTypeGen >= 0.25 && typeOfTheTypeGen < 0.50) {
+			return StandartCake.generateStandartChocolateCake();
+		}
+		if (typeOfTheTypeGen >= 0.50 && typeOfTheTypeGen < 0.75) {
+			return StandartCake.generateStandartEclerCake();
+		} else {
+			return StandartCake.generateStandartFruitCake();
+		}
+	}
+	if (typeOfTheCakeNumberGeneration >= 0.75 && typeOfTheCakeNumberGeneration < 1) {
+		if (typeOfTheTypeGen < 0.33) {
+			return WeddingCake.generateWeddingBigCake();
+		}
+		if (typeOfTheTypeGen > 0.65) {
+			return WeddingCake.generateWeddingMediumCake();
+		} else {
+			return WeddingCake.generateWeddingBigCake();
+		}
+	}
+	return null;
+	}
 }
+
+

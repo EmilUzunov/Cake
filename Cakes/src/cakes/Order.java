@@ -5,6 +5,9 @@ import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
+import cakes.abstractAndEnums.AbstractWithPrice;
+import cakes.client.Client;
+
 public class Order extends AbstractWithPrice {
 
 	private Client client;
@@ -29,6 +32,49 @@ public class Order extends AbstractWithPrice {
 			System.out.println("You will have to provide all the information about the order!");
 		}
 		
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((address == null) ? 0 : address.hashCode());
+		result = prime * result + ((cakes == null) ? 0 : cakes.hashCode());
+		result = prime * result + ((client == null) ? 0 : client.hashCode());
+		result = prime * result + ((dateAndTime == null) ? 0 : dateAndTime.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Order other = (Order) obj;
+		if (address == null) {
+			if (other.address != null)
+				return false;
+		} else if (!address.equals(other.address))
+			return false;
+		if (cakes == null) {
+			if (other.cakes != null)
+				return false;
+		} else if (!cakes.equals(other.cakes))
+			return false;
+		if (client == null) {
+			if (other.client != null)
+				return false;
+		} else if (!client.equals(other.client))
+			return false;
+		if (dateAndTime == null) {
+			if (other.dateAndTime != null)
+				return false;
+		} else if (!dateAndTime.equals(other.dateAndTime))
+			return false;
+		return true;
 	}
 
 	@Override
